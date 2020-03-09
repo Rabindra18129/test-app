@@ -6,7 +6,8 @@ var port = process.env.PORT || 4000;
 
 app.use((req, res) => {
     res.setHeader('content-type', 'text/html');
-    console.log('Request Came...');
+    console.log('New Request Came...');
+    console.log('New Request Came...');
     fs.createReadStream('./index.html').pipe(res);
 });
 
